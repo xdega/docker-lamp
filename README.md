@@ -13,5 +13,4 @@ This example uses the offical Docker containers for MySQL and PHP (with built-in
 #### Notes
 - The easiest way to access the server is by using localhost, i.e. `http://localhost:8080/index.php`.
 - The mysql label used in `docker-compose.yml`, in this case "db", is also the host name for connecting to the database in PHP.
-- `docker-php-ext-install`, used in the Dockerfile, is a built-in installation script for core libraries that comes bundled with the PHP container image and greatly simplifies installation of the mysql module.
-- The mysql module includes PDO and the `mysql_` functions. To use `mysqli_` you'll need to include the mysqli module.
+- `docker-php-ext-install`, used in the Dockerfile, is a built-in installation script for core libraries that comes bundled with the PHP container image and greatly simplifies installation of the mysqli module.
