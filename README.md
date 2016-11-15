@@ -1,4 +1,4 @@
-### lamp-docker
+### docker-lamp
 Basic LAMP stack with docker-compose
 
 #### Overview
