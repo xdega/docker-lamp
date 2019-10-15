@@ -1,14 +1,16 @@
-web:
-  build: .
-  volumes:
-    - ./php:/var/www/html
-  ports:
-    - 8080:80
-  links:
-    - db
-db:
-  image: mysql
-  volumes:
-    - ./mysql:/var/lib/mysql
-  environment:
-    MYSQL_ROOT_PASSWORD: guest
+version: "3.7"
+services:
+    web:
+      build: .
+      volumes:
+        - ./php:/var/www/html
+      ports:
+        - "8080":"80"
+      links:
+        - db
+    db:
+      image: mysql
+      volumes:
+        - ./mysql:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: guest
